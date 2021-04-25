@@ -5,7 +5,7 @@ from os import listdir
 from os.path import isfile, join
 from datetime import datetime
 
-FULL_PATH = '/Users/krzysztofwojdak/Documents/win-or-loose-ai-analyzer/'
+FULL_PATH = '//'
 TETRIS_DATA_PATH = FULL_PATH + 'data/tetris'
 BIOSIGNALS_DATA_PATH = FULL_PATH + 'data/biosignals'
 date_format = '%Y-%m-%d %H:%M:%S'
