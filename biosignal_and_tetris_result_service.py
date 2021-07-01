@@ -5,9 +5,9 @@ from os import listdir
 from os.path import isfile, join
 from datetime import datetime
 
-FULL_PATH = '//'
-TETRIS_DATA_PATH = FULL_PATH + 'data/tetris'
-BIOSIGNALS_DATA_PATH = FULL_PATH + 'data/biosignals'
+FULL_PATH = '/Users/krzysztofwojdak/Documents/win-or-loose-ai-analyzer/'
+TETRIS_DATA_PATH = FULL_PATH + 'part_data/tetris'
+BIOSIGNALS_DATA_PATH = FULL_PATH + 'part_data/biosignals'
 date_format = '%Y-%m-%d %H:%M:%S'
 LINES_PATTERN = "(?<=lines\()[^)]*(?=\))"
 
@@ -42,7 +42,7 @@ def read_tetris_data(tetris_data_path):
     dataset['second'] = pd.to_numeric(dataset['second'], errors='coerce')
     dataset['player'] = pd.to_numeric(dataset['player'], errors='coerce')
 
-    temp_tetris_name = tetris_data_path[12:][:32]
+    temp_tetris_name = tetris_data_path[75:][:32]
     tetris_file_name = temp_tetris_name[:4] + 'R' + temp_tetris_name[4:]
 
     return {tetris_file_name: {
@@ -175,7 +175,7 @@ def get_raw_players_results():
     tetris_data = list(map(lambda x: read_tetris_data(TETRIS_DATA_PATH + '/' + x), tetris_data))
     tetris_data = {k: v for d in tetris_data for k, v in d.items()}
 
-    biosignals_with_tetris = {}
+    raw_results = {}
     for bio_key in biosignals_data:
         _tetris_data = [value for key, value in tetris_data.items() if bio_key in key]
         _tetris_data.sort(key=lambda x: x['times'][0])
@@ -185,18 +185,18 @@ def get_raw_players_results():
             'tetris': _tetris_data,
             'tetris_time_range': get_time_range(_tetris_data)
         }
-        biosignals_with_tetris.update({bio_key: temp})
+        raw_results.update({bio_key: temp})
 
     del biosignals_data
     del temp
     del tetris_data
 
-    biosignals_with_tetris = dict(sorted(biosignals_with_tetris.items()))
+    raw_results = dict(sorted(raw_results.items()))
 
-    return biosignals_with_tetris
+    return raw_results
 
 
-def get_players_results():
+def get_player_results():
     raw_players_results = get_raw_players_results()
 
     results = {}
