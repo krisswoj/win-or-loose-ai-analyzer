@@ -113,7 +113,8 @@ def verify_biosignals_with_tetris_time(biosignals, tetris_results):
     bio_start_time = biosignals.head(1)['Czas'].item()
     bio_end_time = biosignals.tail(1)['Czas'].item()
 
-    if 0 > (tetris_max_time - (bio_end_time - bio_start_time)) or (tetris_max_time - (bio_end_time - bio_start_time)) > 1:
+    if 0 > (tetris_max_time - (bio_end_time - bio_start_time)) or (
+            tetris_max_time - (bio_end_time - bio_start_time)) > 1:
         raise ValueError('Tetris times are not compatible with biosignals times')
 
 
@@ -133,7 +134,8 @@ def insert_p2_tetris_result(biosignals, tetris_result, time_start):
 
 
 def insert_tetris_signals(biosignals, tetris_state, time_start, tetris_column_sufix):
-    merged_tetris_result_with_biosignals = biosignals.apply(lambda x: tetris_state[int(x['Czas']) - 2 - time_start],axis=1)
+    merged_tetris_result_with_biosignals = biosignals.apply(lambda x: tetris_state[int(x['Czas']) - 2 - time_start],
+                                                            axis=1)
     biosignals = biosignals.assign(tetris=merged_tetris_result_with_biosignals.values)
     biosignals['tetris'] = biosignals['tetris'].map(
         {-1: 'Lose' + tetris_column_sufix, 0: 'Draw' + tetris_column_sufix, 1: 'Win' + tetris_column_sufix})
@@ -218,6 +220,6 @@ def get_player_results():
                 'p1': p1,
                 'p2': p2,
             })
-        results.update({key_rpr : temp_results})
+        results.update({key_rpr: temp_results})
 
     return results
