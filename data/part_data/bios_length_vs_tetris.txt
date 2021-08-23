@@ -1,0 +1,55 @@
+E03_R02_S01.txt length: 158.3125s, counted rounds time: 121s
+E03_R02_S02.txt length: 158.0s, counted rounds time: 128s
+E03_R02_S03.txt length: 176.4375s, counted rounds time: 147s
+E03_R02_S04.txt length: 144.0s, counted rounds time: 114s
+E03_R02_S05.txt length: 204.0625s, counted rounds time: 176s
+E03_R02_S06.txt length: 171.0s, counted rounds time: 142s
+
+E03_R03_S01.txt length: 216.8125s, counted rounds time: 165s
+E03_R03_S02.txt length: 332.6875s, counted rounds time: 285s
+E03_R03_S03.txt length: 173.0625s, counted rounds time: 141s
+E03_R03_S04.txt length: 317.125s, counted rounds time: 282s
+E03_R03_S05.txt length: 238.5625s, counted rounds time: 215s
+E03_R03_S06.txt length: 260.9375s, counted rounds time: 223s
+
+E03_R04_S01.txt length: 229.4375s, counted rounds time: 151s
+E03_R04_S02.txt length: 128.375s, counted rounds time: 106s
+E03_R04_S03.txt length: 255.1875s, counted rounds time: 223s
+E03_R04_S04.txt length: 142.8125s, counted rounds time: 101s
+E03_R04_S05.txt length: 145.75s, counted rounds time: 130s
+E03_R04_S06.txt length: 169.0625s, counted rounds time: 153s
+
+E03_R05_S01.txt length: 246.375s, counted rounds time: 208s
+E03_R05_S02.txt length: 174.125s, counted rounds time: 150s
+E03_R05_S03.txt length: 205.25s, counted rounds time: 177s
+E03_R05_S04.txt length: 177.375s, counted rounds time: 136s
+E03_R05_S05.txt length: 189.9375s, counted rounds time: 169s
+E03_R05_S06.txt length: 179.25s, counted rounds time: 156s
+
+E03_R06_S01.txt length: 333.9375s, counted rounds time: 206s
+E03_R06_S02.txt length: 133.4375s, counted rounds time: 115s
+E03_R06_S03.txt length: 307.1875s, counted rounds time: 169s
+E03_R06_S04.txt length: 254.9375s, counted rounds time: 225s
+E03_R06_S05.txt length: 223.6875s, counted rounds time: 200s
+E03_R06_S06.txt length: 215.8125s, counted rounds time: 193s
+
+E03_R07_S01.txt length: 168.75s, counted rounds time: 150s
+E03_R07_S02.txt length: 304.6875s, counted rounds time: 261s
+E03_R07_S03.txt length: 163.625s, counted rounds time: 139s
+E03_R07_S04.txt length: 168.25s, counted rounds time: 144s
+E03_R07_S05.txt length: 189.6875s, counted rounds time: 171s
+E03_R07_S06.txt length: 245.4375s, counted rounds time: 214s
+
+E03_R08_S01.txt length: 280.6875s, counted rounds time: 250s
+E03_R08_S02.txt length: 270.75s, counted rounds time: 239s
+E03_R08_S03.txt length: 249.3125s, counted rounds time: 219s
+E03_R08_S04.txt length: 191.625s, counted rounds time: 173s
+E03_R08_S05.txt length: 299.875s, counted rounds time: 275s
+E03_R08_S06.txt length: 147.0625s, counted rounds time: 129s
+
+E03_R09_S01.txt length: 144.375s, counted rounds time: 115s
+E03_R09_S02.txt length: 151.4375s, counted rounds time: 138s
+E03_R09_S03.txt length: 104.875s, counted rounds time: 80s
+E03_R09_S04.txt length: 110.3125s, counted rounds time: 93s
+E03_R09_S05.txt length: 100.8125s, counted rounds time: 83s
+E03_R09_S06.txt length: 145.9375, counted rounds time: 119s
